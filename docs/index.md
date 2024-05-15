@@ -3,35 +3,47 @@ hide:
   - navigation
 ---
 
-[![github release](https://img.shields.io/github/release/henderiw-nephio/kform.svg?style=flat-square&color=00c9ff&labelColor=bec8d2)](https://github.com/henderiw-nephio/kform/releases/)
-[![Github all releases](https://img.shields.io/github/downloads/henderiw-nephio/kform/total.svg?style=flat-square&color=00c9ff&labelColor=bec8d2)](https://github.com/henderiw-nephio/kform/releases/)
+Welcome to `pkgserver`, your solution for streamlined [KRM][KRM] package management in conjunction with [GitOps][GITOPS] systems. `Pkgserver` is designed to empower operators, developers and/or platform engineers to deploy applications and configurations seamlessly in various environments.
 
----
-Kform is a framework that brings the power of 'KRM as code or data' to Kubernetes. With Kform, orchestrating KRM resources becomes a easy through intuitive and human-readable configuration files. These files are not only reusable and shareable but can also be version-controlled, ensuring seamless collaboration among team members.
+With `pkgserver`, you can embrace continuous delivery practices, ensuring swift and reliable rollouts of changes to your systems. Whether you're managing infrastructure, deploying application in development or production settings, `pkgserver` provides the tools you need to streamline and automate the deployment process.
 
-At its core, Kform empowers you to manage the entire lifecycle of KRM resources specified through the configuration files consistently. Whether it's deployment, scaling, or any other operation, Kform streamlines the process for any resource modeled as KRM. This framework is designed to enhance efficiency and maintainability, making Kubernetes resource orchestration a straightforward and manageable task."
+The `pkgserver` is tailored to meet the needs of modern infrastructure/application management, offering robust features for managing fleet systems at scale. From orchestrating deployments to tracking changes across your environment, `pkgserver` aims to simplify the complexities of `package` management, allowing you to focus on delivering value to your users.
 
 ## Architecture
 
-### Design
+As the name suggests, the `pkgserver` manages `packages`. Fundamentally, a `package` is a set of Kubernetes Resource Model ([KRM][KRM]) resources in [YAML][YAML] format. These resources may include artifacts of software components, configuration artifacts, or a combination thereof. By leveraging [KRM][KRM], pkgserver provides a flexible and extensible framework for defining and managing complex software systems, through a well defined API framework.
 
-### Plan
+To facilitate the organization of packages, the `pkgserver` leverages repositories to manage packages. Within this framework, `pkgserver` distinguishes between two primary types of `packages`: blueprint packages and deployment packages.
 
-### Apply
+Blueprint `packages`, also known as catalog `packages`, serve as templates for software components and configurations. These `packages` define the structure and composition of the desired [KRM][KRM] resources, providing a standardized framework for deployment.
 
-## Why?
+On the other hand, deployment `packages` encapsulate the actual artifacts necessary for deployment, including software components and configuration artifacts. These `packages` contain the tangible elements required to instantiate the blueprint defined by catalog packages.
 
-- manage any KRM resource
-- track changes
-    stored through the k8s api
-- declarative
-    describe end state
-- standardize
-    modules
-- collaborate
+```mermaid
+graph TD;
+    subgraph "Package Organization"
+        RepositoryC[Repository Catalog];
+        RepositoryD[Repository Deployment];
+        PackageC[Package Catalog];
+        PackageD[Package Deployment];
+        RepositoryC --> |1:N| PackageC;
+        RepositoryD --> |1:N| PackageD;
+    end
+```
+
+Central to the functionality of `pkgserver` is its robust lifecycle management system for packages. This system encompasses essential operations such as discovery, creation, reading, updating, and deletion of `packages`, commonly referred to as CRUD operations.
+
+Additionally, `pkgserver` offers comprehensive versioning capabilities, allowing users to track and manage changes to packages over time. This ensures traceability and facilitates the implementation of controlled release processes.
+
 
 ## Join us
+
+Join us on this journey as we redefine package management and deployment for the next generation of software development and infrastructure/application engineering.
 
 Have questions, ideas, bug reports or just want to chat? Come join [our discord server](todo).
 
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" async></script>
+
+[KRM]: https://github.com/kubernetes/design-proposals-archive/blob/main/architecture/resource-management.md
+[GITOPS]: https://opengitops.dev
+[YAML]: https://en.wikipedia.org/wiki/YAML

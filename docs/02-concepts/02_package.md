@@ -6,7 +6,7 @@ Practically a package can be used in various ways (e.g. a certManager package wo
 
 ## PackageRevision
 
-A `package` in the `pkgserver` is represented through a `PackageRevision` KRM resource in the Kubernetes API server. 
+A `package` in the `pkgserver` is represented through a `PackageRevision` resource in the Kubernetes API server. 
 
 ### Identification
 
@@ -14,7 +14,7 @@ A `PackageRevision` is uniquely identified by the following parameters:
 
 **Target**: Specifies the deployment target where the package will be deployed.
 
-**Repository**: Indicates the repository housing the package.
+**Repository**: Indicates the repository hosting the package.
 
 **Realm**: Represents a logical grouping or domain name that associates related packages together.
 
