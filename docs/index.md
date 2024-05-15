@@ -11,13 +11,13 @@ The `pkgserver` is tailored to meet the needs of modern infrastructure/applicati
 
 ## Architecture
 
-As the name suggests, the `pkgserver` manages `packages`. Fundamentally, a `package` is a set of Kubernetes Resource Model ([KRM][KRM]) resources in [YAML][YAML] format. These resources may include artifacts of software components, configuration artifacts, or a combination thereof. By leveraging [KRM][KRM], pkgserver provides a flexible and extensible framework for defining and managing complex software systems, through a well defined API framework.
+As the name suggests, the `pkgserver` manages `packages`. Fundamentally, a `package` is a set of Kubernetes Resource Model ([KRM][KRM]) resources in [YAML][YAML] format. These resources may include artifacts of software components, configuration artifacts, or a combination thereof. By leveraging [KRM][KRM], `pkgserver` provides a flexible and extensible framework for defining and managing complex software systems, through a well defined API framework.
 
-To facilitate the organization of packages, the `pkgserver` leverages repositories to manage packages. Within this framework, `pkgserver` distinguishes between two primary types of `packages`: blueprint packages and deployment packages.
+To facilitate the organization of `packages`, the `pkgserver` leverages `repositories` to manage `packages`. Within this framework, `pkgserver` distinguishes between two primary types of `repositories`: deployment/catalog `repositories`.
 
-Blueprint `packages`, also known as catalog `packages`, serve as templates for software components and configurations. These `packages` define the structure and composition of the desired [KRM][KRM] resources, providing a standardized framework for deployment.
+Catalog `repositories`, also known as blueprint `repositories`, serve as templates for software components and configurations.`Packages` in these `repositories` define the structure and composition of the desired [KRM][KRM] resources, providing a standardized framework for deployment.
 
-On the other hand, deployment `packages` encapsulate the actual artifacts necessary for deployment, including software components and configuration artifacts. These `packages` contain the tangible elements required to instantiate the blueprint defined by catalog packages.
+On the other hand, deployment `repositories` holds `packages` with actual artifacts necessary for deployment, including software components and configuration artifacts. These `packages` contain the tangible elements required to instantiate the deployment artifacts.
 
 ```mermaid
 graph TD;

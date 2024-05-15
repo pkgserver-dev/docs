@@ -3,3 +3,5 @@ hide:
   - navigation
 ---
 
+kind
+kubectl

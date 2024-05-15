@@ -4,10 +4,18 @@ nav:
   - Getting Started: 01-getting-started/01_install.md
   - Concepts:
     - About: 02-concepts/01_about.md
-    - Packages: 02-concepts/02_package.md
+    - Repository: 02-concepts/02_repository.md
+    - Package: 02-concepts/03_package.md
   - User Guide:
     - About: 03-userguide/01_about.md
-    - Repository: 03-userguide/02_repository.md
+    - Registering a catalog repository: 03-userguide/02_register_catalog_repo.md
+    - Registering a deployment repository: 03-userguide/03_register_deployment_repo.md
+    - Package discovery and introspection: 03-userguide/04_package_discovery_introspection.md
+    - Package authoring: 03-userguide/05_package_authoring.md
+    - Clone existing package: 03-userguide/06_clone_existing_package.md
+    - New package revision: 03-userguide/07_new_package_revision.md
+    - Editing package resources: 03-userguide/08_editing_package_resources.md
+    - Package lifecycle: 03-userguide/09_package_lifecycle.md
   - Examples/Tutorials:
     - About: 04-examples/01_about.md
   - Developer Guide:

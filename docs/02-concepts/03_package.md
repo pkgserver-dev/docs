@@ -40,8 +40,6 @@ A `PackageRevision` defines the revision of a package and is managed through a s
 
 **Deleted**: The final state of a `package revision`, indicating that it has been removed from the system and is no longer accessible. If a `package revisio`n ever had a `package revision` identifier, the tag will be deleted when it transitions to the Deleted state.
 
-
-
 ```mermaid
 graph TD;
     subgraph "Package Lifecycle"
@@ -63,5 +61,11 @@ graph TD;
         Published -- Update (Lifecycle: Deletion proposed) --> DeletionProposed;
     end
 ```
+
+!!!note "When a PackageRevision transitions to the Published state, two critical points should be noted: A unique revision is allocated for the PackageRevision and no further changes to the content are permitted. Any necessary modifications require the creation of a new package revision"
+
+## PackagerevisionResources
+
+A `PackageRevisionResource` serves as the api for accessing and updating the contents of a package revision, which comprises [KRM][KRM] resources contained within the package. When an application needs to retrieve specific content from a package revision, it utilizes the `PackageRevisionResource` api. Similarly, updating the content of a package revision is facilitated through interactions with the PackageRevisionResource resource. For example, a developer may use the `PackageRevisionResource` to fetch configuration files or software components stored within a package revision, or to update these resources with new versions or configurations.
 
 [KRM]: https://github.com/kubernetes/design-proposals-archive/blob/main/architecture/resource-management.md

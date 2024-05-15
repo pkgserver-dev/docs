@@ -1,0 +1,9 @@
+# Repository
+
+A `repository` serves as the resource for organizing and managing `package`s within the `pkgserver`. The primary objective of the `pkgserver` project is to maintain versatility, ensuring compatibility with various version control backends. While initial emphasis is placed on GIT and OCI repositories, the architecture remains flexible to accommodate other options as needed.
+
+Marking a repository for deployment signifies its readiness to orchestrate the deployment of packages to target systems. This distinction underscores the pivotal role repositories play in facilitating the seamless transition of packages from development to production environments. Typically blueprint/catalog `packages` are placed in `repositories` where the deployment flag is not set, while deployment packages are placed in repositories with the deployment flag set.
+
+Furthermore, a critical consideration in defining a `repository` lies in configuring the permissions required for lifecycle activities that can be performed by the `pkgserver`. While public git repositories may grant read access to all, certain actions such as creating branches or committing changes necessitate specific access rights through tokens. Therefore, when configuring a repository, it becomes imperative to delineate the tasks pkgserver is authorized to perform. For instance, blueprint packages may not inherently require full CRUD permissions, necessitating a tailored approach to permissions management and as such tokens could be omitted from the configuration
+
+In essence, deploying a repository entails a dual consideration: ensuring its readiness for package deployment and delineating the requisite permissions to facilitate lifecycle activities within the pkgserver environment.
