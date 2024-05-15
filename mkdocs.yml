@@ -8,10 +8,10 @@ nav:
   - User Guide:
     - About: 03-userguide/01_about.md
     - Repository: 03-userguide/02_repository.md
-  - Developer Guide:
-    - About: 04-dev/01_about.md
   - Examples/Tutorials:
-    - About: 05-examples/01_about.md
+    - About: 04-examples/01_about.md
+  - Developer Guide:
+    - About: 05-dev/01_about.md
   - Release Notes:
     - "0.0.1": 06-rn/0.0.1.md
   - Community: 
