@@ -35,6 +35,23 @@ Central to the functionality of `pkgserver` is its robust lifecycle management s
 
 Additionally, `pkgserver` offers comprehensive versioning capabilities, allowing users to track and manage changes to packages over time. This ensures traceability and facilitates the implementation of controlled release processes.
 
+`Pkgserver` extends the Kubernetes API with dedicated resources (`PackageRevision`/`PackageRevisonResources`), ensuring a tailored approach to managing `packages` within Kubernetes environments. Through these API extension the, `Pkgserver` architecture allows for seamless integration with different applications leveraging the event-driven API framework of Kubernetes. This capability empowers users to customize specific scenarios and workflows tailored to their unique requirements. Examples include `Package Specialization`, `Package Approval`, `Package Validation`, `Package Dependencies`, etc.
+
+```mermaid
+graph TD;
+    subgraph "PkgServer Architecture"
+        PkgServerAPI[API Server];
+        PkgRevisionController;
+        PkgServerApp1[Custom Application 1];
+        PkgServerApp2[Custom Application 2];
+        PkgServerDB[Version Controlled Backend];
+        PkgServerAPI --> PkgServerDB;
+        PkgRevisionController --> PkgServerAPI;
+        PkgServerApp1 --> PkgServerAPI;
+        PkgServerApp2 --> PkgServerAPI;
+    end
+```
+
 
 ## Join us
 
