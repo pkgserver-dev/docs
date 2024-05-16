@@ -1,0 +1,71 @@
+# Package Variant
+
+Package Variant with no variable input
+
+```yaml
+apiVersion: config.pkg.pkgserver.dev/v1alpha1
+kind: PackageVariant
+metadata:
+  name: pv-kform-test
+  namespace: default
+spec:
+  upstream:
+    repository: repo-catalog
+    realm: nf
+    package: example
+    revision: v3
+  downstream:
+    target: dummy
+    repository: repo-target
+    realm: nf
+    package: example
+  packageContext:
+    readinessGates:
+    - conditionType: pkg.pkgserver.dev/process
+    labels:
+      a: b
+    annotations:
+      policy.pkg.kform.dev/approval: initial
+```
+
+Package Variant with variable input
+
+```yaml
+apiVersion: config.pkg.pkgserver.dev/v1alpha1
+kind: PackageVariant
+metadata:
+  name: pv-kform-test
+  namespace: default
+spec:
+  upstream:
+    repository: repo-catalog
+    realm: nf
+    package: example
+    revision: v3
+  downstream:
+    target: dummy2
+    repository: repo-target
+    realm: nf
+    package: example
+  packageContext:
+    readinessGates:
+    - conditionType: pkg.pkgserver.dev/process
+    labels:
+      a: b
+    annotations:
+      policy.pkg.kform.dev/approval: initial
+    inputs:
+    - apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        name: example
+        namespace: default
+        annotations:
+          kform.dev/resource-id: context 
+      data:
+        networkInstance: vpc-kform2
+        network: knet2
+        node: b
+        ep: kep2
+
+```

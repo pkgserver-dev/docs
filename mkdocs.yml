@@ -12,12 +12,10 @@ nav:
     - Registering a deployment repository: 03-userguide/03_register_deployment_repo.md
     - Package discovery and introspection: 03-userguide/04_package_discovery_introspection.md
     - Package authoring: 03-userguide/05_package_authoring.md
-    - New package revision: 03-userguide/06_new_package_revision.md
-    - Clone existing package: 03-userguide/07_clone_existing_package.md
-    - Editing package resources: 03-userguide/08_editing_package_resources.md
-    - Package lifecycle: 03-userguide/09_package_lifecycle.md
+    - Package lifecycle: 03-userguide/06_package_lifecycle.md
   - Examples/Tutorials:
     - About: 04-examples/01_about.md
+    - Package Variant: 04-examples/02_package_variant.md
   - Developer Guide:
     - About: 05-dev/01_about.md
   - Release Notes:
