@@ -40,7 +40,7 @@ A package can be rejected using the following command
 To be updated
 ///
 
-/// tab | pkgct;
+/// tab | pkgctl;
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 draft 
@@ -62,7 +62,7 @@ A package can be approved using the following command. Also note that a revision
 To be updated
 ///
 
-/// tab | pkgct;
+/// tab | pkgctl;
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 published
@@ -84,7 +84,7 @@ To be updated
 
 ///
 
-/// tab | pkgct;
+/// tab | pkgctl;
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 deletionProposed
