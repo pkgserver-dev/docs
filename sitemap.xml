@@ -2,107 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.pkgserver.dev/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/01-getting-started/01_install/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/02-concepts/01_about/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/02-concepts/02_repository/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/02-concepts/03_package/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/01_about/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/02_register_catalog_repo/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/03_register_deployment_repo/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/04_package_discovery_introspection/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/05_package_authoring/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.pkgserver.dev/03-userguide/06_new_package_revision/</loc>
-         <lastmod>2024-05-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.pkgserver.dev/03-userguide/07_clone_existing_package/</loc>
-         <lastmod>2024-05-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.pkgserver.dev/03-userguide/08_editing_package_resources/</loc>
-         <lastmod>2024-05-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.pkgserver.dev/03-userguide/09_package_lifecycle/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <loc>https://docs.pkgserver.dev/03-userguide/06_package_lifecycle/</loc>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/10_api/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/03-userguide/overall/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/04-examples/01_about/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.pkgserver.dev/04-examples/02_package_variant/</loc>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/05-dev/01_about/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/06-rn/0.0.1/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/07-community/01_about/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.pkgserver.dev/07-community/02_faq/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
