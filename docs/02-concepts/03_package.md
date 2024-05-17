@@ -62,7 +62,7 @@ graph TD;
     end
 ```
 
-!!!note "When a PackageRevision transitions to the Published state, two critical points should be noted: A unique revision is allocated for the PackageRevision and no further changes to the content are permitted. Any necessary modifications require the creation of a new package revision"
+!!!note "When a PackageRevision transitions to the Published state, two critical points should be noted: A unique revision is allocated for the PackageRevision and no further changes to the content are permitted. Any necessary modifications require the creation of a new packagerevision"
 
 ## PackagerevisionResources
 
