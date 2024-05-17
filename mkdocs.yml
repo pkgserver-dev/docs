@@ -1,7 +1,9 @@
 site_name: pkgserver
 nav:
   - Home: index.md
-  - Getting Started: 01-getting-started/01_install.md
+  - Getting Started: 
+    - Getting started: 01-getting-started/01_install.md
+    - Prerequisites: 01-getting-started/02_prereq.md
   - Concepts:
     - About: 02-concepts/01_about.md
     - Repository: 02-concepts/02_repository.md
