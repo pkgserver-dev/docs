@@ -48,17 +48,18 @@ graph TD;
         Published;
         Draft;
         Proposed;
-        Deleted -- Create (Create Branch) --> Draft;
-        DeletionProposed -- Delete (Delete Tag) --> Deleted;
-        DeletionProposed -- Update (Lifecycle: Publish) --> Published;
-        Draft -- Delete --> Deleted;
-        Draft -- Update (Lifecycle: Draft) --> DeletionProposed;
-        Draft -- Update (Lifecycle: Proposed) --> Proposed;
-        Proposed -- Delete --> Deleted;
-        Proposed -- Update (Lifecycle: Draft) --> Draft;
-        Proposed -- Update (Lifecycle: Publish) (Create TAG, merge WS branch to main)--> Published;
-        Proposed -- Update (Lifecycle: Deletion proposed) --> DeletionProposed;
-        Published -- Update (Lifecycle: Deletion proposed) --> DeletionProposed;
+        Deleted -- "Create (Create Branch)" --> Draft;
+        DeletionProposed -- "Delete (Delete Tag)" --> Deleted;
+        DeletionProposed -- "Update (Lifecycle: Publish)" --> Published;
+        Draft -- "Delete" --> Deleted;
+        Draft -- "Update (Lifecycle: Draft)" --> DeletionProposed;
+        Draft -- "Update (Lifecycle: Proposed)" --> Proposed;
+        Proposed -- "Delete" --> Deleted;
+        Proposed -- "Update (Lifecycle: Draft)" --> Draft;
+        Proposed -- "Update (Lifecycle: Publish) (Create TAG, merge WS branch to main)"--> Published;
+        Proposed -- "Update (Lifecycle: Deletion proposed)" --> DeletionProposed;
+        Published -- "Update (Lifecycle: Deletion proposed)" --> DeletionProposed;
+
     end
 ```
 
