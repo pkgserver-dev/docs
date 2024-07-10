@@ -1,13 +1,13 @@
 site_name: pkgserver
 nav:
   - Home: index.md
-  - Getting Started: 
-    - Getting started: 01-getting-started/01_install.md
-    - Prerequisites: 01-getting-started/02_prereq.md
   - Concepts:
     - About: 02-concepts/01_about.md
     - Repository: 02-concepts/02_repository.md
     - Package: 02-concepts/03_package.md
+  - Getting Started: 
+    - Prerequisites: 01-getting-started/02_prereq.md
+    - Getting started: 01-getting-started/01_install.md
   - User Guide:
     - About: 03-userguide/01_about.md
     - Registering a catalog repository: 03-userguide/02_register_catalog_repo.md
@@ -18,13 +18,10 @@ nav:
   - Examples/Tutorials:
     - About: 04-examples/01_about.md
     - Package Variant: 04-examples/02_package_variant.md
-  - Developer Guide:
-    - About: 05-dev/01_about.md
   - Release Notes:
-    - "0.0.1": 06-rn/0.0.1.md
+    - "Release Notes": 06-rn/rn.md
   - Community: 
     - Community: 07-community/01_about.md
-    - FAQ: 07-community/02_faq.md
 
 site_author: Wim Henderickx
 site_description: >-
@@ -92,7 +89,8 @@ theme:
     logo: fontawesome/solid/sitemap
     repo: fontawesome/brands/github
     edit: material/file-edit-outline
-  favicon: images/flask.svg
+  favicon: assets/logos/Pkgserver-logo-square.svg
+  logo: assets/logos/Pkgserver-logo-square.svg
 
 # Plugins
 plugins:
@@ -105,7 +103,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/sdcio
+      link: https://github.com/pkgserver-dev
     # - icon: fontawesome/brands/discord
     #   link: https://discord.gg/fHCNahWR2T
     

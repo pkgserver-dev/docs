@@ -16,9 +16,11 @@ dummy.repo-target.nf.example.ws1   True    repo-target   dummy    nf      exampl
 After editing is completed, the package revision will transition to a proposed state, that will trigger an authoratative entity to either reject or approve the package
 
 /// tab | kubectl
+
+kubectl to be updated, check for the pkgct option
 ///
 
-/// tab | pkgct;
+/// tab | pkgct
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 proposed
@@ -37,10 +39,10 @@ A package can be rejected using the following command
 
 /// tab | kubectl
 
-To be updated
+kubectl to be updated, check for the pkgct option
 ///
 
-/// tab | pkgctl;
+/// tab | pkgctl
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 draft 
@@ -59,10 +61,10 @@ A package can be approved using the following command. Also note that a revision
 
 /// tab | kubectl
 
-To be updated
+kubectl to be updated, check for the pkgct option
 ///
 
-/// tab | pkgctl;
+/// tab | pkgctl
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 published
@@ -80,11 +82,11 @@ A package that was approved can be deleted using the folliwng commands
 
 /// tab | kubectl
 
-To be updated
+kubectl to be updated, check for the pkgct option
 
 ///
 
-/// tab | pkgctl;
+/// tab | pkgctl
 
 ```
 pkgctl rpkg updatestatus dummy.repo-target.nf.example.ws1 deletionProposed
