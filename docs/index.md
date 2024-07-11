@@ -3,6 +3,10 @@ hide:
   - navigation
 ---
 
+![pkgserver logo](assets/logos/Pkgserver-logo-100x123.png)
+
+# pkgserver (Package Server)
+
 Welcome to `pkgserver`, your solution for streamlined [KRM][KRM] package management in conjunction with [GitOps][GITOPS] systems. `Pkgserver` is designed to empower operators, developers and/or platform engineers to deploy applications and configurations seamlessly in various environments.
 
 With `pkgserver`, you can embrace continuous delivery practices, ensuring swift and reliable rollouts of changes to your systems. Whether you're managing infrastructure, deploying application in development or production settings, `pkgserver` provides the tools you need to streamline and automate the deployment process.
