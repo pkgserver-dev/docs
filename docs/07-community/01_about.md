@@ -14,3 +14,14 @@ The functionality of pkgserver overlaps with [Porch](https://github.com/nephio-p
 
 If you are intrested in a biger picture about how do we imagine network manegement in a Kubernetes native way check out
 [Kubenet](https://learn.kubenet.dev/). 
+
+## Logos
+
+Logos of pkgserver in different formats:
+
+* [With name 100x123 png](../assets/logos/Pkgserver-logo-100x123.png)
+* [With name 574x671 png](../assets/logos/Pkgserver-transparent-withname-574x671.png)
+* [Without name 628x628 png](../assets/logos/Pkgserver-transparent-square-noname-628x628.png)
+* [With name svg](../assets/logos/Pkgserver-logo.svg)
+* [Without name svg](../assets/logos/Pkgserver-logo-square.svg)
+
