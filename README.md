@@ -1,3 +1,5 @@
+![pkgserver logo](https://docs.pkgserver.dev/assets/logos/Pkgserver-logo-100x123.png)
+
 # pkgserver  (Package Server)
 
 `pkgserver` provides KRM package management in conjunction with GitOps systems.
