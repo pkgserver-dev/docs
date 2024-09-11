@@ -3,6 +3,10 @@ hide:
   - navigation
 ---
 
+![Pkgserver logo](assets/logos/Pkgserver-transparent-withname-100x123.png)
+
+[![Discord](https://img.shields.io/discord/860500297297821756?style=flat-square&label=discord&logo=discord&color=00c9ff&labelColor=bec8d2)](https://discord.gg/fH35bmcTU9)
+
 Welcome to `pkgserver`, your solution for streamlined [KRM][KRM] package management in conjunction with [GitOps][GITOPS] systems. `Pkgserver` is designed to empower operators, developers and/or platform engineers to deploy applications and configurations seamlessly in various environments.
 
 With `pkgserver`, you can embrace continuous delivery practices, ensuring swift and reliable rollouts of changes to your systems. Whether you're managing infrastructure, deploying application in development or production settings, `pkgserver` provides the tools you need to streamline and automate the deployment process.
@@ -57,7 +61,7 @@ graph TD;
 
 Join us on this journey as we redefine package management and deployment for the next generation of software development and infrastructure/application engineering.
 
-Have questions, ideas, bug reports or just want to chat? Come join [our discord server](todo).
+Have questions, ideas, bug reports or just want to chat? Come join [our discord server](https://discord.gg/Z9BJeHfBpD).
 
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" async></script>
 

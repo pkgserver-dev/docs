@@ -16,7 +16,7 @@ nav:
     - Package authoring: 03-userguide/05_package_authoring.md
     - Package lifecycle: 03-userguide/06_package_lifecycle.md
   - Examples/Tutorials:
-    - About: 04-examples/01_about.md
+#    - About: 04-examples/01_about.md
     - Package Variant: 04-examples/02_package_variant.md
   - Release Notes:
     - "Release Notes": 06-rn/rn.md
